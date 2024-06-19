@@ -1,0 +1,92 @@
+.button-group {
+    margin-right: 20px;
+}
+.card-content {
+    transition: filter 1.0s;
+}
+.card {
+    position: relative;
+    transition: transform 1.0s;
+    min-width: 400px;
+}
+@media (max-width: 1920px) {
+    .columns.is-multiline.is-mobile .column.is-one-quarter {
+        width: calc(100% / 4);
+        padding: 12px;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 1600px) {
+    .columns.is-multiline.is-mobile .column.is-one-quarter {
+        width: calc(100% / 3);
+        padding: 12px;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 1200px) {
+    .columns.is-multiline.is-mobile .column.is-one-quarter {
+        width: calc(100% / 2);
+        padding: 12px;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 800px) {
+    .columns.is-multiline.is-mobile .column.is-one-quarter {
+        width: 100%;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+}
+.bid-button {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.front-card-content {
+    transition: filter 1.0s;
+}
+.card-blur {
+    filter: blur(2px) grayscale(80%);
+}
+.custom-section {
+    border: 1px solid #dbdbdb;
+    border-radius: 12px;
+    padding: 22px;
+}
+.custom-section .title {
+    border-bottom: 1px solid #dbdbdb;
+    padding-bottom: 12px;
+    margin-bottom: 22px;
+}
+.modal-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+}
+.modal-card {
+    border-radius: 6px;
+    width: 400px;
+    height: 500px;
+}
+.modal-card-head {
+    text-align: center;
+    border-bottom: 0px;
+    background-color: rgb(255, 255, 255);
+}
+.modal-background {
+    background-color: rgba(0, 0, 0, 0.753);
+}
+body.modal-open {
+    overflow: hidden;
+}
